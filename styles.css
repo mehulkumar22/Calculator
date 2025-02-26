@@ -1,0 +1,161 @@
+body {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* FOR MOBILE */
+@media not all and (orientation:landscape){
+  body{
+    background-image: url('Images/img2.jpg  ');
+    background-size: cover;
+  }
+  .calculator{
+    max-width: 275px;
+    max-height: min-content;
+  }
+  /* To Hide The Footer */
+  footer{
+    background:transparent;
+    color:transparent;
+    text-align: center;
+    padding: 0px;
+    margin-top: 50px;
+    position: absolute;
+    top: auto;
+    bottom: 1px;
+    width: 100%;
+    font-size: 10px;
+  }
+}
+/* FOR DESKTOP */
+@media not all and (orientation:portrait){
+  body{
+    background-image: url('Images/img1.jpg');
+  }
+  footer {
+    background:transparent;
+    color:black;
+    text-align: center;
+    padding: 0px;
+    position: absolute;
+    top: auto;
+    bottom: 1px;
+    width: 100%;
+    font-size: 10px;
+  }
+}
+
+.head {
+  text-align: center;
+  color: skyblue;
+}
+
+.calculator { 
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.display {
+  outline:none;
+  width: calc(100% - 20px);
+  height: 50px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-align: right;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  background-color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: lightskyblue;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: lightseagreen;
+}
+.zero {
+  grid-column: span 2;
+}
+
+/* EACH OPERATIONS BUTTON COLORS */
+#allclear{
+  background-color: lightsalmon;
+}
+#clear{
+  background-color:coral;
+}
+#percentage{
+  background-color: darkturquoise;
+}
+#div{
+  background-color: violet;
+}
+#mul{
+  background-color: gold;
+}
+#sub{
+  background-color: springgreen;
+}
+#add{
+  background-color: darkorange;
+}
+#equal{
+  background-color: turquoise;
+}
+#dec{
+  background-color: lightpink;
+}
+
+/* EACH OPERATION BUTTONS HOVER */
+#allclear:hover{
+  background-color: crimson;
+}
+#clear:hover{
+  background-color:chocolate;
+}
+#percentage:hover{
+  background-color: palegreen;
+}
+#div:hover{
+  background-color: burlywood;
+}
+#mul:hover{
+  background-color: cornflowerblue;
+}
+#sub:hover{
+  background-color: aquamarine;
+}
+#add:hover{
+  background-color: gold;
+}
+#equal:hover{
+  background-color: limegreen;
+}
+#dec:hover{
+  background-color: violet;
+}
